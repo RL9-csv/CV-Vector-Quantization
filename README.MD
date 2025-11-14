@@ -104,7 +104,8 @@ eunchan@timwork.kr 문의주시면 확인하는 즉시 답변 드리겠습니다
 **저는 해당 문제를 단순히 도면의 차이점을 찾는 과제가 아닌, 주어진 데이터의 특성에 가장 적합한 기술 스택을 선택하고 그 근거를 증명하는 엔지니어링 문제로 접근을 했습니다.** 
 
 ### 3-1. 벡터 양자화를 통한 데이터 복잡도 분석 
-![VQ Codebook](./assets/vq_codebook.png)
+![VQ Codebook](https://github.com/RL9-csv/CV-Vector-Quantization/blob/main/assets/vq_codebook.png.png?raw=true)
+
 
 파이프라인 설계에 앞서, 데이터 자체의 시각적 복잡도를 분석하기 위해 벡터 양자화를 수행했습니다. `K=64`로 설정하여 데이터 셋 전체에서 시각 단어집(Visual Vocabulary)을 학습한 결과, 모델이 학습한 단어들은 '문'이나 '창문' 같은 의미를 담는 객체가 아닌, 수직/수평, 모서리, 공백 등 매우 기본적인 기하학적 패턴으로 구성되어 있음을 확인했습니다.  
 
